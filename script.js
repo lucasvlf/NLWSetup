@@ -12,6 +12,7 @@ function add() {
     alert("Dia ja incluso!")
     return
   }
+  alert("Dia adicionado com sucesso ✔")
 
   nlwSetup.addDay(today)
 }
@@ -23,6 +24,6 @@ function save() {
 //const data = {
 // water: ["01-01", "01-02", "01-03", "01-04", "01-05"],
 //}
-const data = JSON.parse(localStorage.getItem("NLWSetupHabits"))  || {}
+const data = JSON.parse(localStorage.getItem("NLWSetupHabits")) || {}
 nlwSetup.setData(data)
 nlwSetup.load()
